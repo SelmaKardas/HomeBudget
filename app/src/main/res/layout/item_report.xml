@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/darker_gray"
+                android:text="Datum"
+                android:textSize="12sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/darker_gray"
+                android:text="Iznos"
+                android:textSize="12sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/transaction_name"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="120dp"
+                android:textColor="@android:color/darker_gray"
+                android:text="Transaction"
+                android:textSize="13sp" />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userEmail"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="120dp"
+                android:layout_below="@id/transaction_name"
+                android:textColor="@android:color/darker_gray"
+                android:text="UserEmai"
+                android:textSize="12sp" />
+
+             <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/userEmail"
+                android:layout_margin="2sp"
+                android:background="@android:color/darker_gray"/>
+
+
+
+</RelativeLayout>

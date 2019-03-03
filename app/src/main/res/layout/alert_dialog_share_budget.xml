@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/friendsEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your friend's email"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/label_budgets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Choose budget you want to share"
+        android:layout_below="@id/friendsEmail"
+        android:textSize="13sp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_budgets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/label_budgets"
+        android:textSize="13sp"
+        android:textAlignment="textEnd"/>
+
+
+    <EditText
+        android:id="@+id/new_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/spinner_categories"
+        android:hint="Enter new category"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="13sp"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

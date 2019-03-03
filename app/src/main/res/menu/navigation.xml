@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_shopping_lists"
+        android:icon="@drawable/sharp_shopping_cart_black_18"
+        android:title="@string/title_shopping_lists" />
+
+    <item
+        android:id="@+id/navigation_expenses"
+        android:icon="@drawable/sharp_credit_card_black_18"
+        android:title="@string/title_expenses" />
+
+    <item
+        android:id="@+id/navigation_incomes"
+        android:icon="@drawable/sharp_euro_symbol_black_18"
+        android:title="@string/title_incomes" />
+
+    <item
+        android:id="@+id/navigation_reports"
+        android:icon="@drawable/sharp_trending_up_black_18"
+        android:title="@string/title_reports" />
+
+</menu>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "202181777442",
+    "firebase_url": "https://homebudget-51234.firebaseio.com",
+    "project_id": "homebudget-51234",
+    "storage_bucket": "homebudget-51234.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202181777442:android:d383d60e98eff760",
+        "android_client_info": {
+          "package_name": "com.example.selma.homebudget"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202181777442-elm5bp48eblksbiifttd354shaq2he72.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.selma.homebudget",
+            "certificate_hash": "a52dafa84c0b5eba2520f4ec07b7eacd62931877"
+          }
+        },
+        {
+          "client_id": "202181777442-73ukijpk6ak52j32ns3k7ggjmm4u1ue9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4Zetdqr9RJFcM0OrcPxRnu2jXuBljtUc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202181777442-73ukijpk6ak52j32ns3k7ggjmm4u1ue9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

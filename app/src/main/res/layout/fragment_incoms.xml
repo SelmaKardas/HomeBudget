@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Incoms">
+
+    <TextView
+        android:id="@+id/text_total_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_toStartOf="@id/text_choose_budget"
+        android:text="@string/total_money"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/text_saldo"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/text_total_money"
+        android:hint="@string/no_money"
+        android:textAlignment="center"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/text_choose_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:text="@string/choose_add_budget"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spinner_budget"
+        android:layout_margin="8sp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/edit_text_transaction_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_categories"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:hint="@string/transaction_description"
+        android:textSize="15sp"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/edit_text_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_transaction_description"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:hint="@string/amount"
+        android:inputType="numberDecimal"
+        android:textSize="15sp"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/text_choose_categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_line"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/choose_add_category"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+
+    <Spinner
+        android:id="@+id/spinner_categories"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_choose_categories"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:spinnerMode="dropdown"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/spinner_budget"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/text_choose_budget"
+        android:textSize="12sp" />
+
+
+    <EditText
+        android:id="@+id/edit_text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_line"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="@string/choose_date"
+        android:textSize="15sp"
+        android:inputType="date"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/button_save"
+        style="@style/FirebaseUI.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_date"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/color_light_green"
+        android:text="@string/save"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/empty_view"
+        android:layout_below="@id/edit_text_amount"
+        android:gravity="center"
+        android:text="@string/empty_view_message"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

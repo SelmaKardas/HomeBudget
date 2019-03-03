@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reports">
+
+    <EditText
+        android:id="@+id/edit_text_date_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="@string/from"
+        android:textSize="15sp"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/edit_text_date_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_date_start"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="@string/to"
+        android:textSize="15sp"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/button_show_report"
+        style="@style/FirebaseUI.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_categories"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/color_light_green"
+        android:text="@string/report"
+        android:enabled="false"/>
+
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@id/edit_text_date_start"
+        android:checkedButton="@id/radio_all">
+
+        <RadioButton
+            android:id="@+id/radio_expenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/expenses"/>
+        <RadioButton
+            android:id="@+id/radio_incomes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/incomes"/>
+        <RadioButton
+            android:id="@+id/radio_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/all"/>
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner_budget"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:textSize="12sp"
+        android:spinnerMode="dropdown"
+        android:textAlignment="textEnd" />
+
+    <Spinner
+        android:id="@+id/spinner_categories"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/spinner_budget"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:textSize="12sp"
+        android:spinnerMode="dropdown"
+        android:textAlignment="textEnd"/>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/button_show_report"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/text_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/view_line"
+        android:textAlignment="viewEnd"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/view_line_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text_sum"
+        android:background="@color/colorPrimary"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_reports"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@id/view_line_2"
+        android:padding="2dp"
+        android:clipToPadding="false"
+        tools:listitem="@layout/item_report"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar_reports"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        style="@style/Widget.AppCompat.ProgressBar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/empty_view_reports"
+        android:layout_below="@id/view_line"
+        android:gravity="center"
+        android:text="@string/no_transactions_message"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>
