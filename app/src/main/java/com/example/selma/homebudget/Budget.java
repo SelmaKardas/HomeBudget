@@ -4,7 +4,6 @@ public class Budget {
     private String budgetId, budgetName, userEmail;
 
     public Budget(){}
-    //jkfhjshfj
 
     public Budget(String budgetId, String budgetName, String userEmail) {
         this.budgetId = budgetId;
@@ -15,6 +14,7 @@ public class Budget {
     public String getBudgetId() {
         return budgetId;
     }
+    //fhfhdf
 
     public String getBudgetName() {
         return budgetName;
